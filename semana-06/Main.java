@@ -3,13 +3,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<EmpleadoAbstract> lista = new ArrayList<>();
-        EmpleadoPlanta ana = new EmpleadoPlanta("Ana", "E001", 2000000, 5);
-        EmpleadoContrato luis = new EmpleadoContrato("Luis", "E002", 1500000, 6);
+        List<PersonalAbstract> lista = new ArrayList<>();
+        PersonalPlanta ana = new PersonalPlanta("Ana", "E001", 2000000, 5);
+        PersonalContrato luis = new PersonalContrato("Luis", "E002", 1500000, 6);
         lista.add(ana);
         lista.add(luis);
 
-        for (EmpleadoAbstract e : lista) {
+        for (PersonalAbstract e : lista) {
             e.mostrarInfo();
             System.out.println(e.obtenerDescripcion());
             System.out.println("Salario: $" + String.format("%.2f", e.calcularSalario()));

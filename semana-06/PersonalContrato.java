@@ -1,8 +1,8 @@
-public class EmpleadoContrato extends EmpleadoAbstract implements Evaluable, Bonificable {
+public class PersonalContrato extends PersonalAbstract implements Evaluable, Bonificable {
     private int mesesContrato;
     private int calificacion;
 
-    public EmpleadoContrato(String nombre, String id, double salario, int meses) {
+    public PersonalContrato(String nombre, String id, double salario, int meses) {
         super(nombre, id, salario);
         this.mesesContrato = meses;
     }

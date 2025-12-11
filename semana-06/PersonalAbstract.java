@@ -1,16 +1,16 @@
-public abstract class EmpleadoAbstract {
+public abstract class PersonalAbstract {
     protected String nombre;
     protected String identificacion;
     protected double salarioBase;
 
-    public EmpleadoAbstract(String nombre, String identificacion, double salarioBase) {
+    public PersonalAbstract(String nombre, String identificacion, double salarioBase) {
         this.nombre = nombre;
         this.identificacion = identificacion;
         this.salarioBase = salarioBase;
     }
 
     public void mostrarInfo() {
-        System.out.println("Empleado: " + nombre + " | ID: " + identificacion);
+        System.out.println("Personal: " + nombre + " | ID: " + identificacion);
     }
 
     public abstract double calcularSalario();

@@ -1,8 +1,8 @@
-public class EmpleadoPlanta extends EmpleadoAbstract implements Evaluable, Bonificable {
+public class PersonalPlanta extends PersonalAbstract implements Evaluable, Bonificable {
     private int anosAntiguedad;
     private int calificacion;
 
-    public EmpleadoPlanta(String nombre, String id, double salario, int anos) {
+    public PersonalPlanta(String nombre, String id, double salario, int anos) {
         super(nombre, id, salario);
         this.anosAntiguedad = anos;
     }

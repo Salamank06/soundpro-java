@@ -1,7 +1,7 @@
 # Análisis de Abstracción e Interfaces – SoundPro
 
 ## Justificación de Abstracciones
-- `EmpleadoAbstract` captura estado común (nombre, identificación, salario) y comportamiento compartido (`mostrarInfo`).
+- `PersonalAbstract` captura estado común (nombre, identificación, salario) y comportamiento compartido (`mostrarInfo`).
 - Obliga a subclases a definir `calcularSalario` y `obtenerDescripcion`.
 
 ## Interfaces
@@ -10,11 +10,11 @@
 - Permiten capacidades transversales, no jerárquicas, y múltiple implementación.
 
 ## Jerarquía
-EmpleadoAbstract
+PersonalAbstract
    |
 ----+----+
 |         |
-EmpleadoPlanta    EmpleadoContrato
+PersonalPlanta    PersonalContrato
 
 ## Principios SOLID
 - SRP: Cada clase tiene una responsabilidad clara (cálculo salario, evaluación, bonos).
