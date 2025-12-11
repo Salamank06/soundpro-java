@@ -1,10 +1,9 @@
 public class RecordingSession {
-    // Atributos (más de 3, lo cual es mejor práctica)
-    String sessionCode;
-    String sessionType;
-    int durationHours;
-    double pricePerHour;
-    String artistName;
+    private String sessionCode;
+    private String sessionType;
+    private int durationHours;
+    private double pricePerHour;
+    private String artistName;
 
     // Constructor
     public RecordingSession(String sessionCode, String sessionType, int durationHours, double pricePerHour, String artistName) {
