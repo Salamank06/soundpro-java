@@ -1,7 +1,7 @@
-public class EmpleadoPlanta extends Empleado {
+public class PersonalPlanta extends Personal {
     private int anosAntiguedad;
 
-    public EmpleadoPlanta(String nombre, String id, double salario, int anos) {
+    public PersonalPlanta(String nombre, String id, double salario, int anos) {
         super(nombre, id, salario);
         this.anosAntiguedad = anos;
     }
@@ -13,7 +13,5 @@ public class EmpleadoPlanta extends Empleado {
     }
 
     @Override
-    public String obtenerDescripcion() {
-        return "Planta, años: " + anosAntiguedad;
-    }
+    public String obtenerDescripcion() { return "Planta, años: " + anosAntiguedad; }
 }

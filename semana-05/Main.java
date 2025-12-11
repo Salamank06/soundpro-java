@@ -2,35 +2,35 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Empleado[] empleados = new Empleado[3];
-        empleados[0] = new EmpleadoPlanta("Ana", "E001", 2000000, 5);
-        empleados[1] = new EmpleadoContrato("Luis", "E002", 1500000, 6);
-        empleados[2] = new EmpleadoPlanta("María", "E003", 2500000, 3);
+        Personal[] personas = new Personal[3];
+        personas[0] = new PersonalPlanta("Ana", "E001", 2000000, 5);
+        personas[1] = new PersonalContrato("Luis", "E002", 1500000, 6);
+        personas[2] = new PersonalPlanta("María", "E003", 2500000, 3);
 
-        for (Empleado emp : empleados) {
-            emp.mostrarInfo();
-            System.out.println(emp.obtenerDescripcion());
-            System.out.println("Salario: $" + String.format("%.2f", emp.calcularSalario()));
+        for (Personal p : personas) {
+            p.mostrarInfo();
+            System.out.println(p.obtenerDescripcion());
+            System.out.println("Salario: $" + String.format("%.2f", p.calcularSalario()));
             System.out.println("---");
         }
 
-        SistemaRH rh = new SistemaRH();
-        for (Empleado emp : empleados) rh.agregarEmpleado(emp);
+        SoundProHR hr = new SoundProHR();
+        for (Personal p : personas) hr.agregarPersonal(p);
 
-        for (Empleado emp : empleados) {
-            double pago = rh.procesarNomina(emp);
-            double pagoConBono = rh.aplicarBono(pago, 10);
+        for (Personal p : personas) {
+            double pago = hr.procesarNomina(p);
+            double pagoConBono = hr.aplicarBono(pago, 10);
             System.out.println("Pago con bono 10%: $" + String.format("%.2f", pagoConBono));
         }
 
-        Empleado encontrado = rh.buscarEmpleado("E002");
+        Personal encontrado = hr.buscarPersonal("E002");
         System.out.println("Encontrado por ID: " + (encontrado != null ? encontrado.nombre : "N/A"));
 
-        List<Empleado> rango = rh.buscarEmpleado(2000000, 3000000);
+        List<Personal> rango = hr.buscarPersonal(2000000, 3000000);
         System.out.println("En rango 2M-3M: " + rango.size());
 
-        Empleado filtro = new Empleado("Ana", null, 0);
-        List<Empleado> porNombre = rh.buscarEmpleado(filtro);
+        Personal filtro = new Personal("Ana", null, 0);
+        List<Personal> porNombre = hr.buscarPersonal(filtro);
         System.out.println("Por nombre Ana: " + porNombre.size());
     }
 }
