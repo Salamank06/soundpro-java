@@ -1,14 +1,14 @@
 # Jerarquía de Clases - Semana 04
 
 ## Diagrama
-Empleado
+PersonalSoundPro
    |
-----+----+
++----+----+
 |         |
-EmpleadoPlanta EmpleadoContrato
+PersonalPlanta PersonalContrato
 
 ## Justificación
-Modelo simple de recursos humanos para diferenciar empleados de planta con bonos por antigüedad y empleados por contrato sin bonos.
+Modelo de personal del estudio de grabación (SoundPro): personal de planta con bono por antigüedad y personal por contrato sin bonos.
 
 ## Atributos Heredados
 - nombre (String)

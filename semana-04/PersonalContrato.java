@@ -1,7 +1,7 @@
-public class EmpleadoContrato extends Empleado {
+public class PersonalContrato extends PersonalSoundPro {
     private int mesesContrato;
 
-    public EmpleadoContrato(String nombre, String id, double salario, int meses) {
+    public PersonalContrato(String nombre, String id, double salario, int meses) {
         super(nombre, id, salario);
         this.mesesContrato = meses;
     }
