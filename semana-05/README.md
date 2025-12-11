@@ -22,3 +22,5 @@
 javac -encoding UTF-8 semana-05/*.java
 java -cp semana-05 Main
 ```
+\
+Entrega confirmada (Semana 05).
