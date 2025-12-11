@@ -1,9 +1,9 @@
 # Entrega Semana 04 – Herencia (SoundPro)
 
 ## Estructura
-- Empleado.java (padre)
-- EmpleadoPlanta.java (subclase)
-- EmpleadoContrato.java (subclase)
+- PersonalSoundPro.java (padre)
+- PersonalPlanta.java (subclase)
+- PersonalContrato.java (subclase)
 - Main.java
 - JERARQUIA.md
 

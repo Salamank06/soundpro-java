@@ -1,10 +1,10 @@
 # Entrega Semana 05 – Polimorfismo (SoundPro)
 
 ## Estructura
-- Empleado.java (padre mejorada)
-- EmpleadoPlanta.java (`@Override`)
-- EmpleadoContrato.java (`@Override`)
-- SistemaRH.java (métodos polimórficos y sobrecarga)
+- Personal.java (padre mejorada)
+- PersonalPlanta.java (`@Override`)
+- PersonalContrato.java (`@Override`)
+- SoundProHR.java (métodos polimórficos y sobrecarga)
 - Main.java
 - POLIMORFISMO.md
 
@@ -12,7 +12,7 @@
 - Sobrecarga: mínimo 2 métodos con mismo nombre, diferentes parámetros
 - `@Override` en subclases
 - Métodos polimórficos que aceptan clase padre
-- ArrayList polimórfico `ArrayList<Empleado>`
+- ArrayList polimórfico `ArrayList<Personal>`
 - `Main` demuestra sobrecarga y polimorfismo
 - `POLIMORFISMO.md` con análisis
 - Compila y ejecuta correctamente
