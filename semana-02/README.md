@@ -41,6 +41,16 @@ semana-02/ ├── README.md ├── StudioBooth.java ├── Invoice.java
 
 ---
 
+## Comandos de Compilación
+
+```bash
+cd semana-02
+javac -encoding UTF-8 -d bin src/*.java
+java -cp bin Main
+```
+
+---
+
 ## Proceso de Entrega
 
 El código se implementó siguiendo la nomenclatura **`PascalCase`** para clases y **`camelCase`** para variables, y se subió con el siguiente proceso:

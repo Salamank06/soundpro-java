@@ -18,6 +18,6 @@
 
 ## Comandos
 ```
-javac -encoding UTF-8 semana-03/*.java
-java -cp semana-03 Main
+javac -encoding UTF-8 -d bin src/*.java
+java -cp bin Main
 ```

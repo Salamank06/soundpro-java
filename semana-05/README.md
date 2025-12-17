@@ -19,8 +19,8 @@
 
 ## Comandos
 ```
-javac -encoding UTF-8 semana-05/*.java
-java -cp semana-05 Main
+javac -encoding UTF-8 -d bin src/*.java
+java -cp bin Main
 ```
 \
 Entrega confirmada (Semana 05).
