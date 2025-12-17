@@ -161,9 +161,9 @@ Cada semana contiene:
 
 ## 👨‍💻 Autor
 
-**Santiago Salamanca**  
+**Luis Fernando Sanchez Loaiza**  
 Estudiante de Bootcamp Java POO  
-Email: Santicosalamanca@gmail.com
+Ficha: 3228973A
 
 ---
 
